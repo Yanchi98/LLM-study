@@ -1,0 +1,1 @@
+model_path = "/root/autodl-tmp/LLM-study/embedding/FlagEmbedding/model"
