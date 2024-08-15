@@ -7,7 +7,7 @@ import sys
 import json
 import traceback
 
-from flask_simple.model import JiebaModel
+from model import JiebaModel
 
 app = Flask(__name__)
 CORS(app) # 允许所有路由上所有域使用CORS
@@ -46,4 +46,4 @@ def get_result():
 if __name__ == "__main__":
     jiebaModel = JiebaModel()
     jiebaModel.load_model()
-    app.run(host='0.0.0.0', port=1314, threaded=False)
+    app.run(host='0.0.0.0', port=1313, threaded=False)
