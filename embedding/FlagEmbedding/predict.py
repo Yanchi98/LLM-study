@@ -13,7 +13,7 @@ similarity = embeddings_1 @ embeddings_2.T
 print(similarity)
 
 
-# q-p匹配，需要instruction
+# q-p匹配，需要instruction, encode_queries会自动添加上instruction
 queries = ["我想买苹果手机", "我想吃苹果"]
 passages = ["苹果是一种水果", "iphone深受果粉喜爱"]
 q_embeddings = model.encode_queries(queries)
