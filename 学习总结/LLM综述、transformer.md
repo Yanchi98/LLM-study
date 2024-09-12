@@ -1,18 +1,20 @@
 ## 1、什么是one-hot编码？
-ans:利用分类原理，转换为0，1向量，1的位置是独立的，用来表征token，存在问题是矩阵比较稀疏
+将离散的分类标签转换为二进制向量，存在问题是矩阵比较稀疏
+![image](https://github.com/user-attachments/assets/85057908-31e7-4777-96de-58d9e5ee3b00)
 
 ## 2、one-hot编码和embedding之间的区别?
-ans:
 one-hot:稀疏，无法捕捉上下文信息，无法学习，只适合简单的离散特征
+
 embedding:密集，可以学习上下文信息，可以通过学习得到语义信息，适合复杂连续特征
 
 ## 3、vector quantization和embedding之间的区别?
-ans:
 vector quantization连续的向量空间->离散化
+
 embedding离散的数据->连续的向量空间
 
 
 ## 4、写出word2vec问题定义和训练目标
+
 ## 5、word2vec可以使用对比学习来训练吗
 Word2Vec本身并不是通过对比学习（contrastive learning）来训练的，而是通过`预测目标词与其上下文词的概率关系（Skip-Gram 或 CBOW）进行优化`。然而，理论上，对比学习的思想可以应用于Word2Vec的训练框架，并且已经有一些研究尝试将对比学习与词向量的训练结合起来。
 对比学习的基本思想
